@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="contact form example">
+  <link rel="shortcut icon" href="craft-space.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- Style The Contact Form How Ever You Prefer -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Craft Space || Join As A Seller</title>
+</head>
+
+<body class="beige">
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="craft-space.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+        <span class="craft">Craft</span><span class="space">Space</span>
+      </a>
+    </div>
+  </nav>
+  <center>
+    <h1>Welcome To Craft Space !!! Join Us As A Seller</h1>
+  </center>
+
+  <!-- START HERE -->
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="jishub2204@gmail.com"
+    action="https://script.google.com/macros/s/AKfycbzr5Ys1vv6UlScQ-GKb6AP3ey6IkOq-3fKMUZAge9Vu5ShvXg7EoguGUP3dVYCG9MKF3w/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What Is Your Name ???" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="address">Address: </label>
+        <textarea id="address" name="address" rows="3" placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" value="" id="email" placeholder="Enter your email address" required="">
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="phone">Mobile Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your mobile number" required="">
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="color">Favourite Color: </label>
+        <input id="color" name="color" placeholder="green" />
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty
+          to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="category">Product Category:</label>
+        <select name="category" id="category">
+          <option value="">Select category</option>
+          <option name="electronics" value="electronics">Electronics</option>
+          <option name="clothing" value="clothing">Clothing</option>
+          <option name="books" value="books">Books</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="subcategory">Sub Category:</label>
+        <input type="text" class="form-control" name="subcategory" id="subcategory" placeholder="Enter sub category">
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="image">Upload Image:</label>
+        <input type="file" class="form-control-file" name="image" id="image">
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="document">Upload PAN/Aadhar Card Documents:</label>
+        <input type="file" class="form-control-file" name="document" id="document">
+    </div>
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    Customise the Thankyou Message People See when they submit the form:
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+  <center>
+    <footer>
+      Copyright &copy; <a href="https://craftspace.in">Craft Space</a> || Developed by &reg; <a href="https://mb-webbers.newsgoogle.org">MB Webber's</a>
+    </footer>
+  </center>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+  <!-- END -->
+
+</body>
+
+</html>

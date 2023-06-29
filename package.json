@@ -1,0 +1,19 @@
+{
+  "name": "learn-to-send-email-via-google-script-html-no-server",
+  "version": "2.1.0",
+  "description": "Tutorial showing how to save data to a google doc spreadsheet from any html form (including sending emails!)",
+  "main": "static-server.js",
+  "scripts": {
+    "start": "node_modules/.bin/live-server --port=8000"
+  },
+  "keywords": [
+    "tutorial",
+    "google",
+    "docs",
+    "email",
+    "form"
+  ],
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
